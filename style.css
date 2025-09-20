@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+form label {
+  margin: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #1e90ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0066cc;
+}
+
+.hidden {
+  display: none;
+}
+
+#flights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.flight-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #aaa;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seat.window { background: #e6f7ff; }
+.seat.aisle { background: #fff2e6; }
+.seat.middle { background: #f9e6ff; }
+
+.seat.selected {
+  background: #1e90ff;
+  color: white;
+}
+
+footer {
+  margin-top: auto;
+  background: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}

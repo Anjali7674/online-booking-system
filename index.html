@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyBook - Flight Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>✈ SkyBook Flight Booking</h1>
+  </header>
+
+  <!-- Search Form -->
+  <section id="search-section">
+    <h2>Search Flights</h2>
+    <form id="searchForm">
+      <label>From: <input type="text" id="from" required></label>
+      <label>To: <input type="text" id="to" required></label>
+      <label>Date: <input type="date" id="date" required></label>
+      <label>Passengers: <input type="number" id="passengers" min="1" value="1"></label>
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  <!-- Flight Results -->
+  <section id="results-section" class="hidden">
+    <h2>Available Flights</h2>
+    <div id="flights"></div>
+  </section>
+
+  <!-- Seat Selection -->
+  <section id="seat-section" class="hidden">
+    <h2>Select Your Seat</h2>
+    <div id="seatMap"></div>
+    <button id="confirmSeatBtn">Confirm Seat</button>
+  </section>
+
+  <!-- Booking Summary -->
+  <section id="summary-section" class="hidden">
+    <h2>Booking Summary</h2>
+    <div id="summary"></div>
+    <button id="finishBookingBtn">Finish Booking</button>
+  </section>
+
+  <footer>
+    © 2025 SkyBook. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
